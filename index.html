@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoding VISUALS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-background"></div>
+    <main class="container card2">
+        <section class="hero">
+
+            <div class="hero-content">
+                <h1 class="pixel-title">DECODING... VISUALS</h1>
+                <p class="description">
+                    Every design tells a story, and every story deserves to be told beautifully. Let's create magic
+                    together<br>
+                    <span style="color: white;"><b>"Bringing Ideas to Life—One Pixel at a Time"</b></span>
+                </p>
+                <a href="#title" class="cta-button">Try now!</a>
+            </div>
+
+            <!-- <div class="side-image">
+                <img src="pngegg (4).png" alt="" width="900px" height="400px">
+            </div> -->
+
+            <div id="app ">
+                <canvas id="webgl-canvas"></canvas>
+            </div>
+
+
+        </section>
+
+
+
+
+        <div class="title">
+            WHAT it can DO !
+        </div>
+
+
+        <div class="ag-format-container">
+            <div class="ag-courses_box">
+                <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg"></div>
+
+                        <div class="ag-courses-item_title">
+                            Image Recognition and Classification
+                        </div>
+                        <p style="text-decoration: none; color: wheat;">Ability to identify objects, scenes, and contexts within images accurately.</p>
+                    </a>
+                </div>
+
+                <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg"></div>
+
+                        <div class="ag-courses-item_title">
+                            Scene <br>Understanding
+                        </div>
+                        <p style="text-decoration: none; color: wheat;">Ability to identify objects, scenes, and contexts within images accurately.</p>
+
+                    </a>
+                </div>
+
+                <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg">
+                        </div>
+                        <div class="ag-courses-item_title">
+                            Facial and <br> Emotion Analysis:
+                        </div>
+                        <p style="text-decoration: none; color: wheat;">Recognizing faces and interpreting emotional states based on visual cues.</p>
+                    </a>
+                </div>
+
+
+                <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg">
+                        </div>
+                        <div class="ag-courses-item_title">
+                            Visual Question Answering (VQA):
+                        </div>
+                        <p style="text-decoration: none; color: wheat;">Responding to questions about visual content, demonstrating the ability to comprehend and analyze images deeply.</p>
+                    </a>
+                </div>
+
+                <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg">
+                        </div>
+                        <div class="ag-courses-item_title">
+                            Text Recognition <br>(OCR):
+                        </div>
+                        <p style="text-decoration: none; color: wheat;">Decoding and extracting textual information from images or scanned documents.</p>
+                    </a>
+                </div>
+
+                <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg"></div>
+
+                        <div class="ag-courses-item_title">
+                            Visual Content Summarization:
+                        </div>
+                        <p style="text-decoration: none; color: wheat;">Generating concise descriptions of visual media for accessibility or metadata creation.</p>
+
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="title2" id="title">
+            TEST it OUT !!
+        </div>
+
+
+        <div class="parent2" >
+            <div class="child1">
+                <form id="uploadForm">
+                    <label for="image">Decode... your image --? ^_^ </label>
+                    <hr>
+                    <input type="file" id="image" accept="image/*" required>
+                     
+                    <label for="details">Additional Details... O_O</label>
+                    <textarea id="details"
+                        style="background-color: rgba(0, 0, 0, 0.13); color: white; font-size: 16px; " id="details"
+                        rows="4" cols="30" placeholder="Enter any additional instructions or comments..."
+                        required></textarea>
+                    <div class="spinner" id="spinner" style="display: none;"></div>
+                    <hr>
+                    <input class="evaluate" type="button" id="getResult" value="Evaluate">
+
+            </div>
+            </form>
+            <div class="child2">
+                <h2 style="text-align: center; margin-top: 5px;">Uploaded Image Preview :-)</h2>
+                <div id="imagePreviewContainer" class="image-preview-container" style="display: none;">
+                    <img id="imagePreview" src="" alt="Uploaded Image Preview" class="image-preview"
+                        style="display: none;">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- New div for the result text -->
+        <div id="result" class="loream-text-container" style="margin-top: 80px;">
+            <!-- <h3  id="resultHeader" class="title3">YOUR RESULT IS ....</h3> -->
+            <h1 id="resultHeader">DECODING your VISUALS... </h1>
+            <div id="load">
+                <div>G</div>
+                <div>N</div>
+                <div>I</div>
+                <div>D</div>
+                <div>A</div>
+                <div>O</div>
+                <div>L</div>
+            </div>
+            <div id="resulttext">
+                <p id="loreamText" style="margin-top: 30px; font-size: 20px;">
+                <div style="margin-top: 100px;" class="harshit">Your Result will be Displayed here be patient!<br>
+                    (The results may not be correct everytime)
+                </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="title2" id="title">
+            Meet the Devs!
+        </div>
+       
+        <section class="team">
+
+            
+            <a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank">
+                <div class="card">
+                  <div class="wrapper">
+                    <img src="./images/bg1.png" class="cover-image" />
+                  </div>
+                  <img src="./images/DEEPANSHU KAUSHIK.png" class="title" />
+                  <img src="./images/d.png" class="character" />
+                </div>
+              </a>
+              
+              
+              <a href="" alt="Mythrill" target="_blank">
+                <div class="card">
+                  <div class="wrapper">
+                    <img src="./images/bg3.jpeg" class="cover-image" />
+                  </div>
+                  <img src="./images/HARSHIT MASIWAL.png" class="title" />
+                  <img src="./images/h.png" class="character" />
+                </div>
+              </a>
+              <a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank">
+                <div class="card">
+                  <div class="wrapper">
+                    <img src="./images/bg2.png" class="cover-image" />
+                  </div>
+                  <img src="./images/SAKSHI VISHNOI.png" class="title" />
+                  <img src="./images/s.png" class="character" />
+                </div>
+              </a>
+        </section>
+
+        <footer>
+            <div class="title2" id="title">
+                INTERNAL HACKATHON PROJECT!
+            </div>
+            <p style="text-align: center;">Team Bro Code has successfully harnessed the capabilities of Generative AI through the Gemnai platform to create a revolutionary solution. Their project emphasizes innovation, leveraging Gemnai's tools to develop a product that simplifies complex problems and enhances user experiences.
+            </p>
+        </footer>
+
+        
+
+    </main>
+
+
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
