@@ -26,7 +26,7 @@ document.querySelector('.cta-button').addEventListener('click', function (event)
 
 document.getElementById("getResult").addEventListener("click", function () {
     
-    const geminiAPIkey = "AIzaSyDe3rFpW32v3ugHrBi2eS07iiKWke3jCDM";
+    const geminiAPIkey = "xxxxxxxxxxxxxxxxxxxxxxx";
     const geminiAIModel = "gemini-1.5-flash";
     const imageInput = document.getElementById("image");
     const details = document.getElementById("details").value;
